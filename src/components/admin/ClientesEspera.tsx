@@ -1,10 +1,9 @@
 "use client";
 import { ClienteAtendiendoProps, ClienteEsperaProps } from "@/types/clienteCola.types";
 import { Button } from "../ui/button";
-import { Edit, MoreVertical, Trash, UserPlus } from "lucide-react";
+import { MoreVertical } from "lucide-react";
 import { Card } from "../ui/card";
-
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { TypographyH2 } from "../ui/TypographyH2";
 import { ModalAgregarCliente } from "./modal/ModalAgregarCliente";
 import { ModalEditarCliente } from "./modal/ModalEditarCliente";
