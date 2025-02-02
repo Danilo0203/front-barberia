@@ -18,8 +18,8 @@ export const FormAgregarCliente = () => {
   });
   const { barbers } = useGetBarbers();
   const mutationTicket = useMutationTicket();
-  const onSubmit = async (data: AgregarClienteSchema) => {
-    await mutationTicket.mutateAsync(data, {
+  const onSubmit = (data: AgregarClienteSchema) => {
+    mutationTicket.mutate(data, {
       onSuccess: () => form.reset(),
     });
   };
