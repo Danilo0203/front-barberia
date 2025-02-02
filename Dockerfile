@@ -16,6 +16,9 @@ COPY . .
 # Construir la aplicación
 RUN npm run build
 
+ENV NEXT_PUBLIC_PYTHON_HOST="https://danilodev0203.pythonanywhere.com"
+ENV NEXT_PUBLIC_PYTHON_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4Njg5NjE5LCJpYXQiOjE3Mzg1MTMxNjQsImp0aSI6ImQ5YmRjM2NjMzk3NDRkOGY5YzQ5ZDM0ZGJiMDNmMDAyIiwidXNlcl9pZCI6MX0.Ja5jLtZAuOQfD802oMbX4Zv5YGKNdj5rR8wz-eQWJhU"
+
 # Exponer el puerto en el que la aplicación se ejecutará
 EXPOSE 3000
 
